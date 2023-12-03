@@ -1,7 +1,12 @@
 package fr.edminecoreteam.store.gui;
 
+import java.sql.SQLData;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
+import fr.edminecoreteam.store.utils.BoutiqueListListener;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
@@ -38,7 +43,7 @@ public class StoreMainGui implements Listener
 	public static void gui(Player p) {
 		SettingInfo settingInfo = new SettingInfo(p);
 		AccountInfo accountInfo = new AccountInfo(p);
-        
+
         if (settingInfo.getLang() == 0)
         {
         	Inventory inv = Bukkit.createInventory(null, 54, "§8Boutique");
@@ -49,7 +54,7 @@ public class StoreMainGui implements Listener
     	        public void run() {
     	        	
     	        	if (!p.getOpenInventory().getTitle().equalsIgnoreCase("§8Boutique")) { cancel(); }
-    	        	
+
     	        	ItemStack deco = new ItemStack(Material.STAINED_GLASS_PANE, 1, (short)4);
 		            ItemMeta decoM = deco.getItemMeta();
 		            decoM.addEnchant(Enchantment.DAMAGE_ALL, 1, true);
@@ -73,8 +78,7 @@ public class StoreMainGui implements Listener
 	                economiesM.setLore(loreeconomies);
 	                economies.setItemMeta(economiesM);
 	                inv.setItem(4, economies);
-		            
-		            
+
 	            	ItemStack mainStore = getSkull("http://textures.minecraft.net/texture/12694ede96b218511602153f665398be7c9669caf672c4bc8f35bcd517e28c3");
 	                SkullMeta mainStoreM = (SkullMeta) mainStore.getItemMeta();
 	                mainStoreM.setDisplayName("§e§lBoutique");
@@ -257,7 +261,7 @@ public class StoreMainGui implements Listener
                                 }
                                 lorestore.add("");
                                 lorestore.add(" §dInformation:");
-                                if (storeInfo.getArticleRarity() == 1)
+								if (BoutiqueListListener.storeRarety = 1)
 					            {
                                 	lorestore.add(" §f▶ §7Rareté: §6✯§8✯✯✯✯");
 					            }

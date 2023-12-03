@@ -2,6 +2,7 @@ package fr.edminecoreteam.store;
 
 import java.util.HashMap;
 
+import fr.edminecoreteam.store.utils.BoutiqueListListener;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.entity.Player;
@@ -42,6 +43,7 @@ public class Main extends JavaPlugin
         MySQLConnect();
         loadListeners();
         loadCommands();
+        loadBoutiqueList();
     }
 
     @Override
@@ -49,6 +51,9 @@ public class Main extends JavaPlugin
         MySQLDisconnect();
     }
 
+    private void loadBoutiqueList(){
+        BoutiqueListListener.getBoutiqueList();
+    }
     private void loadListeners()
     {
         Main.instance = this;

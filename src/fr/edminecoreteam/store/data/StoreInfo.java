@@ -63,7 +63,7 @@ public class StoreInfo
 	public Float getArticlePrice() { return storeData.getArticlePrice(); }
 	public String getIsInReduction() { return storeData.getIsInReduction(); }
 	public int getReductionPercentage() { return storeData.getReductionPercentage(); }
-	public int getArticleRarity() { return storeData.getArticleRarity(); }
+	public String getArticleRarity() { return storeData.getArticleRarity(); }
 	public String getArticleItem() { return storeData.getArticleItem(); }
 	public int getArticleItemSlot() { return storeData.getArticleItemSlot(); }
 	public String getArticleSkull() { return storeData.getArticleSkull(); }
