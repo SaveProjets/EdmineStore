@@ -6,8 +6,10 @@ import fr.edminecoreteam.store.data.StoreInfo;
 import java.util.HashMap;
 
 public class BoutiqueListListener {
+
+    // Store //
     public static HashMap<Integer, String> storeList = new HashMap<>();
-    public static int HashMap<> storeRarety = new HashMap<>();
+    public static HashMap<Integer, String> storeRarety = new HashMap<>();
     public static HashMap<Integer, String> storeSkull = new HashMap<>();
 
     public static void getBoutiqueList() {
