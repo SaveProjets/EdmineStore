@@ -9,7 +9,7 @@ public class BoutiqueListListener {
 
     // Store //
     public static HashMap<Integer, String> storeList = new HashMap<>();
-    public static HashMap<Integer, String> storeRarety = new HashMap<>();
+    public static HashMap<Integer, Integer> storeRarety = new HashMap<>();
     public static HashMap<Integer, String> storeSkull = new HashMap<>();
 
     public static void getBoutiqueList() {

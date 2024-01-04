@@ -261,7 +261,7 @@ public class StoreMainGui implements Listener
                                 }
                                 lorestore.add("");
                                 lorestore.add(" §dInformation:");
-								if (BoutiqueListListener.storeRarety = 1)
+								if (storeInfo.getArticleRarity() == 1)
 					            {
                                 	lorestore.add(" §f▶ §7Rareté: §6✯§8✯✯✯✯");
 					            }

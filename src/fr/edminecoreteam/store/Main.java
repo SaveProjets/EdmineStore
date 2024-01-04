@@ -90,7 +90,7 @@ public class Main extends JavaPlugin
     {
         instance = this;
 
-        (this.database = new MySQL(instance, "jdbc:mysql://", "45.140.165.235", "22728-database", "22728-database", "S5bV5su4p9")).connexion();
+        (this.database = new MySQL(instance, "jdbc:mysql://", "localhost", "edmine-db", "edmine-db", "@3VrvjB_zrP@eY!9")).connexion();
 
         database.creatingTableStore();
         database.creatingTableStoreType();
