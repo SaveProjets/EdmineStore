@@ -1,0 +1,9 @@
+name: EdmineStore
+version: 1.0
+author: EdmineCoreTeam
+main: fr.edminecoreteam.store.Main
+commands:
+  store:
+    description: Commande administrative
+  buy:
+    description: Commande d'achat
